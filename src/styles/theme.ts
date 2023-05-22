@@ -27,6 +27,15 @@ const theme = createTheme({
                             }
                           `,
     },
+    // MuiFab: {
+    //   styleOverrides: {
+    //     root: {
+    //       position: 'fixed',
+    //       bottom: '2rem',
+    //       right: '2rem'
+    //     }
+    //   }
+    // }
   },
 });
 

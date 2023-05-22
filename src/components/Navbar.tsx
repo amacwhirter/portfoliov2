@@ -14,6 +14,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import Fab from "@mui/material/Fab";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 interface Props {
   /**
@@ -24,7 +29,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ["01. Home", "02. About", "03. Experience", "03. Contact"];
+const navItems = ["Home", "About", "Experience", "Contact"];
 
 export default function Navbar(props: Props) {
   const { window } = props;
@@ -97,17 +102,22 @@ export default function Navbar(props: Props) {
                 key={item}
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Typography
-                  color={"primary"}
-                  variant={"body2"}
-                  style={{
-                    fontWeight: "bold",
-                    fontFamily:
-                      "Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace",
-                  }}
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  style={{ textDecoration: "none" }}
                 >
-                  {item}
-                </Typography>
+                  <Typography
+                    color={"primary"}
+                    variant={"body2"}
+                    style={{
+                      fontWeight: "bold",
+                      fontFamily:
+                        "Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace",
+                    }}
+                  >
+                    {item}
+                  </Typography>
+                </a>
               </Grid>
             ))}
             <Grid item>
@@ -138,6 +148,17 @@ export default function Navbar(props: Props) {
           {drawer}
         </Drawer>
       </Box>
+      <Stack spacing={2} style={{ position: "fixed", right: 50, top: "45%" }}>
+        <Fab aria-label="github">
+          <GitHubIcon />
+        </Fab>
+        <Fab aria-label="linkedin">
+          <LinkedInIcon />
+        </Fab>
+        <Fab aria-label="twitter">
+          <TwitterIcon />
+        </Fab>
+      </Stack>
     </Box>
   );
 }
