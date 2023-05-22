@@ -52,6 +52,17 @@ export default function Home() {
             I build software.
           </Typography>
         </Grid>
+        <Grid item xs={12}>
+          <Typography
+            color={"#8892B0"}
+            variant={"h3"}
+            style={{
+              fontWeight: "bold",
+            }}
+          >
+            Blockchain and Hedera enthusiast.
+          </Typography>
+        </Grid>
         <Grid item xs={6}>
           <Typography
             color={"#8892B0"}

@@ -149,13 +149,28 @@ export default function Navbar(props: Props) {
         </Drawer>
       </Box>
       <Stack spacing={2} style={{ position: "fixed", right: 50, top: "45%" }}>
-        <Fab aria-label="github">
+        <Fab
+          style={{ color: "#5BE3D0", backgroundColor: "#112240" }}
+          aria-label="github"
+          href={"https://github.com/amacwhirter"}
+          target={"_blank"}
+        >
           <GitHubIcon />
         </Fab>
-        <Fab aria-label="linkedin">
+        <Fab
+          style={{ color: "#5BE3D0", backgroundColor: "#112240" }}
+          aria-label="linkedin"
+          href={"https://www.linkedin.com/in/amacwhirter/"}
+          target={"_blank"}
+        >
           <LinkedInIcon />
         </Fab>
-        <Fab aria-label="twitter">
+        <Fab
+          style={{ color: "#5BE3D0", backgroundColor: "#112240" }}
+          aria-label="twitter"
+          href={"https://twitter.com/ashmac10"}
+          target={"_blank"}
+        >
           <TwitterIcon />
         </Fab>
       </Stack>

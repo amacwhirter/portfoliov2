@@ -38,7 +38,12 @@ export default function Contact() {
       </Grid>
       <br />
       <Grid item>
-        <Button variant={"outlined"}>Say hello</Button>
+        <a
+          href="mailto: amacwhirter@contact.com"
+          style={{ textDecoration: "none" }}
+        >
+          <Button variant={"outlined"}>Say hello</Button>
+        </a>
       </Grid>
     </Grid>
   );
