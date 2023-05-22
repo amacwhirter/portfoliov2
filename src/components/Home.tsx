@@ -16,8 +16,9 @@ export default function Home() {
         direction={"column"}
         alignItems={"center"}
         justifyContent={"center"}
+        // style={{ borderLeft: "2px solid #73AD21", borderTop: "2px solid #73AD21"}}
       >
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ paddingTop: 60 }}>
           <Typography
             color={"primary"}
             variant={"body2"}
@@ -30,7 +31,7 @@ export default function Home() {
             Hi, my name is
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ paddingRight: 60, paddingLeft: 60 }}>
           <Typography
             color={"#CCD6F6"}
             variant={"h2"}
@@ -63,7 +64,7 @@ export default function Home() {
             Blockchain and Hedera enthusiast.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} style={{ paddingBottom: 60 }}>
           <Typography
             color={"#8892B0"}
             variant={"h6"}
