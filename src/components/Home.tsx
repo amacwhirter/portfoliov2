@@ -59,9 +59,10 @@ export default function Home() {
             variant={"h3"}
             style={{
               fontWeight: "bold",
+              textAlign: 'center',
             }}
           >
-            Blockchain and Hedera enthusiast.
+            Blockchain solution and Hedera enthusiast.
           </Typography>
         </Grid>
         <Grid item xs={6} style={{ paddingBottom: 60 }}>
@@ -73,8 +74,9 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            I’m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I’m focused
+            I’m a software engineer specializing in building trustworthy solutions backed by blockchain with an excellent user experience.
+            <br/>
+            Currently, I’m focused
             on building blockchain-enabled, accessible, human-centered
             healthcare products at{" "}
             <a
@@ -85,7 +87,7 @@ export default function Home() {
             >
               Acoer
             </a>
-            .
+            {" "}as the lead frontend engineer.
           </Typography>
         </Grid>
       </Grid>
