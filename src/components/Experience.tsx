@@ -57,7 +57,7 @@ export default function Experience() {
         <Typography
           color={"#CCD6F6"}
           variant={"h4"}
-          style={{ textAlign: "right" }}
+          // style={{ textAlign: "right" }}
         >
           Experience
         </Typography>

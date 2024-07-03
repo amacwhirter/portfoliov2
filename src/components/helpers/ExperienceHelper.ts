@@ -34,7 +34,7 @@ export const experienceList = [
   },
   {
     title: "Web Development Course Mentor",
-    date: "Mar 2022 - Present",
+    date: "Mar 2022 - Jan 2024",
     tasks: [
       "Weekly mentoring sessions with students",
       "Guide and advise my students in the completion of the projects",

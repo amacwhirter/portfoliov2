@@ -22,16 +22,16 @@ function App() {
         <Grid item xs={12}>
           <Navbar />
         </Grid>
-        <Grid item xs={6} id={"home"}>
+        <Grid item xs={11} md={6} id={"home"}>
           <Home />
         </Grid>
-        <Grid item xs={8} id={"about"}>
+        <Grid item xs={11} md={8} id={"about"}>
           <About />
         </Grid>
-        <Grid item xs={8} id={"experience"}>
+        <Grid item xs={11} md={8} id={"experience"}>
           <Experience />
         </Grid>
-        <Grid item xs={8} id={"contact"}>
+        <Grid item xs={11} md={8} id={"contact"}>
           <Contact />
         </Grid>
         <Grid item xs={12}>

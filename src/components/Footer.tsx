@@ -12,7 +12,7 @@ export default function Footer() {
     >
       <Grid>
         <Typography variant={"caption"} color={"#fff"}>
-          &copy; 2023: amacwhirter
+          &copy; 2024: amacwhirter.com
         </Typography>
       </Grid>
     </Grid>

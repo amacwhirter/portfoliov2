@@ -31,12 +31,13 @@ export default function Home() {
             Hi, my name is
           </Typography>
         </Grid>
-        <Grid item xs={12} style={{ paddingRight: 60, paddingLeft: 60 }}>
+        <Grid item xs={12}>
           <Typography
             color={"#CCD6F6"}
             variant={"h2"}
             style={{
               fontWeight: "bold",
+              textAlign: "center",
             }}
           >
             Ashley MacWhirter.
@@ -59,7 +60,7 @@ export default function Home() {
             variant={"h3"}
             style={{
               fontWeight: "bold",
-              textAlign: 'center',
+              textAlign: "center",
             }}
           >
             Blockchain solution and Hedera enthusiast.
@@ -74,11 +75,11 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            I’m a software engineer specializing in building trustworthy solutions backed by blockchain with an excellent user experience.
-            <br/>
-            Currently, I’m focused
-            on building blockchain-enabled, accessible, human-centered
-            healthcare products at{" "}
+            I’m a software engineer specializing in building trustworthy
+            solutions backed by blockchain with an excellent user experience.
+            <br />
+            Currently, I’m focused on building blockchain-enabled, accessible,
+            human-centered healthcare products at{" "}
             <a
               href="https://www.acoer.com/"
               target={"_blank"}
@@ -86,8 +87,8 @@ export default function Home() {
               rel={"noreferrer"}
             >
               Acoer
-            </a>
-            {" "}as the lead frontend engineer.
+            </a>{" "}
+            as the lead frontend engineer.
           </Typography>
         </Grid>
       </Grid>

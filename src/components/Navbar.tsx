@@ -41,16 +41,17 @@ export default function Navbar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
-      <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
+            <a
+              href={`#${item.toLowerCase()}`}
+              style={{ textDecoration: "none" }}
+            >
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </a>
           </ListItem>
         ))}
       </List>
@@ -78,18 +79,18 @@ export default function Navbar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", sm: "block" },
-              fontWeight: "bold",
-            }}
-            color={"primary"}
-          >
-            ADM
-          </Typography>
+          {/*<Typography*/}
+          {/*  variant="h6"*/}
+          {/*  component="div"*/}
+          {/*  sx={{*/}
+          {/*    flexGrow: 1,*/}
+          {/*    display: { xs: "none", sm: "block" },*/}
+          {/*    fontWeight: "bold",*/}
+          {/*  }}*/}
+          {/*  color={"primary"}*/}
+          {/*>*/}
+          {/*  ADM*/}
+          {/*</Typography>*/}
           <Grid
             container
             justifyContent={"flex-end"}
